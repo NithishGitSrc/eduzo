@@ -1,0 +1,307 @@
+@import url(https://fonts.googleapis.com/css?family=Figtree|Quicksand|Nunito|DM+Sans);
+
+#root {
+  position: relative;
+  /* border: 4px solid rgb(23, 180, 44); */
+  min-height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#navBar {
+  /* border: 1px solid; */
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  padding: 50px;
+  height: 100vh;
+  width: 20%;
+  box-sizing: border-box;
+}
+
+#content {
+  position: relative;
+  display: inline-block;
+  background-color: #f8f9ff;
+  margin-left: 20%;
+  /* border: 1px solid gray; */
+  box-sizing: border-box;
+  height: calc(100vh - 5px);
+  overflow-y: auto;
+  width: 80%;
+  padding: 40px;
+}
+
+#logo {
+  position: relative;
+  font-family: "Quicksand";
+  font-size: 33px;
+  font-weight: bold;
+  /* border: 1px solid; */
+  text-align: left;
+}
+#menu {
+  margin-top: 50px;
+  font-family: "DM Sans";
+}
+#menu .item {
+  /* border: 1px solid gray; */
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+  transition: 0.5s;
+  padding: 17px 15px;
+  font-size: 22px;
+  text-align: left;
+  
+}
+
+.item img{
+  height: 24px;
+  margin-right: 15px;
+}
+
+#qv-userProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  /* border: 1px solid green; */
+  left: 0;
+  padding: 30px;
+  background-color: #f6f6f6;
+  font-family: "DM Sans";
+}
+
+#qv-userProfile img {
+  margin-right: 10px; /* Adjust the margin as needed */
+  height: 36px;
+}
+
+#menu .item:hover {
+  border-radius: 10px;
+  background-color: #4335d2;
+  color: white;
+  cursor: pointer;
+  /* color: #0134fe; */
+}
+
+.manage-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "DM Sans";
+}
+
+.manage-header > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#notify-icon{
+  height: 24px;
+  transition: .3s;
+  cursor: pointer;
+}
+#notify-icon:hover{
+  transform: scale(1.06) rotate(20deg);
+}
+.basicPlanBtn {
+  background-color: #4335d2;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.basicPlanBtn:hover{
+  transform: scale(1.04);
+}
+
+.admin-acc-section {
+
+  position: relative;
+  margin-top: 50px;
+  max-width: 50%;  
+  /* display: inline-block; */
+  font-family: "DM Sans";
+  /* border: 1px solid grey; */
+}
+.admin-acc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  gap: 0 10px;
+}
+.admin-acc-header > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.admin-acc-header h2 {
+  letter-spacing: 1px;
+}
+#acc-edit-btn {
+  padding: 5px 13px;
+  background-color: white;
+  border: 1px solid #d0d2de;
+  border-radius: 3px;
+  transition: .3s;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'DM Sans';
+}
+
+.admin-acc-section .school-code {
+  color: white;
+  font-size: 15px;
+  background-color: #80889f;
+  border-radius: 4px;
+  padding: 4px 6px;
+  margin-left: 5px;
+}
+
+.admin-acc-section > p:nth-child(2) {
+  font-size: 12px;
+  color: #555658;
+}
+
+.admin-acc {
+  display: grid;
+  grid-template-columns: 120px auto;
+  margin-top: 20px;
+  padding: 25px 20px;
+  border: 1.3px solid #4234d3;
+  border-radius: 16px;
+  background-color: white;
+}
+.admin-acc-profile {
+  height: 110px;
+  width: 110px;
+  /* border: 1px solid green; */
+  border-radius: 100%;
+  background-position: 100% 100%;
+  background-size: contain;
+}
+.admin-details {
+  padding: 0 20px;
+}
+.admin-details h2 {
+  letter-spacing: 1.3px;
+}
+.admin-details > :nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.admin-tag {
+  background-color: #65c85c;
+  color: white;
+  border-radius: 5px;
+  padding: 3px 7px;
+  margin-left: 5px;
+  font-size: 16px;
+}
+.admin-details p {
+  color: #666767;
+  font-size: 20px;
+  margin-top: 6px;
+}
+
+.admin-acc-section {
+  position: relative;
+}
+.other-acc-header {
+  position: relative;
+  margin-top: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "DM Sans";
+}
+.other-acc-header p {
+  margin-top: 5px;
+  color: #56575b;
+}
+
+.add-instructor {
+  display: inline-block;
+  color: white;
+  padding: 10px 15px ;
+  background-color: #4234d3;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.add-instructor:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.other-accs-container {
+  position: relative;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: "DM sans";
+  gap: 30px 20px ;
+  margin-top: 20px;
+}
+
+.other-acc-card {
+  position: relative;
+  border: 1px solid #d0d2de;
+  border-radius: 8px;
+  background-color: white;
+  padding: 15px 50px;
+}
+.other-acc-card .prf-pic {
+  width: 100px;
+  height: 100px;
+  border: 1px solid grey;
+  border-radius: 100%;
+}
+
+.other-acc-card h4{
+  text-align: center;
+}
+
+.other-acc-card p {
+  margin: 5px 0;
+  color: #575759;
+  text-align: center;
+  font-size: 15px;
+}
+.instructor-tag{
+  text-align: center;
+}
+.instructor-tag p{
+  display: inline-block;
+  background-color: #C6C8D8;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 5px;
+  
+}
+.test{
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: 1px solid grey;
+  text-align: center;
+  color: #56575b;
+}
+.edit-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  border: 1px solid rgb(151, 143, 143);
+  border-radius: 4px;
+  
+}
